@@ -1,6 +1,6 @@
 Package.describe({
   name: 'pascoual:pdfkitx',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'PDFKit, the PDF generation library for servers and browsers.',
   git: 'https://github.com/pascoual/meteor-pdfkitx.git',
   documentation: 'README.md'
