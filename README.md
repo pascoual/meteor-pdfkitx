@@ -16,7 +16,7 @@ For a server-side only version, with better perfomance and Fibered methods
         doc.fontSize(12);
         doc.text('PDFKit is simple', 10, 30, {align: 'center', width: 200});
         doc.write(process.env.PWD + '/PDFKitExample.pdf');
-        // the doc is written on your file system
+        // the doc is written on server file system
 3. Example: create a PDF client-side 
 
         ```js
