@@ -7,14 +7,9 @@ For a server-side only version, with better perfomance and Fibered methods
 (non-blocking thread, but synchronous) see this package
 [pascoual:pdfkit](https://github.com/pascoual/meteor-pdfkit)
 
-## WARNING
-For now the client side is not working. We need to use Browserify to do that.
-More to come.
-
 ## Quick Start
 1. `meteor add pascoual:pdfkitx`
 2. Example: create a PDF server-side 
-
 
         ```js
         var doc = new PDFDocument({size: 'A4', margin: 50});
@@ -22,10 +17,6 @@ More to come.
         doc.text('PDFKit is simple', 10, 30, {align: 'center', width: 200});
         doc.write(process.env.PWD + '/PDFKitExample.pdf');
         ```
-3. Example: a route that creates and serves a PDF (thanks @babak49)
-```
-TODO
-```
 
 ## Documentation
 You can find information about the PDFKit node package here:
