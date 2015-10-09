@@ -9,14 +9,15 @@ For a server-side only version, with better perfomance and Fibered methods
 
 ## Quick Start
 1. `meteor add pascoual:pdfkitx`
-2. Example: create a PDF server-side 
+2. Example: create a PDF server-side
 ```js
 var doc = new PDFDocument({size: 'A4', margin: 50});
 doc.fontSize(12);
 doc.text('PDFKit is simple', 10, 30, {align: 'center', width: 200});
 doc.write(process.env.PWD + '/PDFKitExampleServerSide.pdf');
 // the doc is written on server file system
-3. Example: create a PDF client-side 
+```
+3. Example: create a PDF client-side
 ```js
 var doc = new PDFDocument({size: 'A4', margin: 50});
 doc.fontSize(12);
