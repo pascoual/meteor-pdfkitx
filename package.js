@@ -14,7 +14,6 @@ Npm.depends({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
-  api.use('ecmascript');
   api.use('cosmos:browserify@0.8.1', 'client');
   api.addFiles('pdfkitx.browserify.js', 'client');
   api.addFiles('pdfkitx.client.js', 'client');
