@@ -7,7 +7,10 @@ PDFDocument.prototype.write = function (filename) {
     var link = document.createElement('a');
     link.href = this.toBlobURL('application/pdf')
     link.download = filename;
-    link.click();
+
+	document.body.appendChild(link); // add element to DOM
+    link.click(); // programmatically click the link
+	document.body.removeChild(link); // remove element from DOM
   });
   this.end();
 }
